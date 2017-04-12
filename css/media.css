@@ -1,0 +1,122 @@
+/*Media queriy
+--------------------------------------*/
+@media screen and (max-width: 1200px) {
+    .mainSlideShow {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .mainSlideShow {
+        font-size: 50%;
+    }
+
+    .latest-items,
+    .latest-sale-items {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .globalWidth {
+        margin: 0 3%;
+        padding: 0;
+    }
+
+    #header .globalWidth {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #header .container {
+        position: relative;
+    }
+
+    #header .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.8987%; /*15/790*/
+    }
+
+    #header .logo a {
+        display: inline-block;
+    }
+
+    .navPrimary {
+        width: 100%;
+        float: none;
+        background-color: #555;
+    }
+
+    .navPrimary li {
+        text-align: center;
+    }
+
+    .mainSlideShow {
+        clear: both;
+    }
+
+    .latest-items {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .latest-item {
+        float: left;
+        width: 47%;
+    }
+
+    .latest-sale-item {
+        float: none;
+        width: 100%;
+        margin-bottom: 2.5641%; /*30/1170*/;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainSlideShow {
+        display: none;
+    }
+
+    .latest-item {
+        float: none;
+        width: 100%;
+        font-size: 180%;
+    }
+
+    .trending-img,
+    .trending-desc {
+        float: none;
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .blog-slide {
+        width: 97%;
+    }
+
+    .blog-slide:first-child {
+        margin-bottom: 5.1282%;
+    }
+
+    .subscribe p {
+        text-align: center;
+    }
+
+    .subscribe-left,
+    .subscribe-right {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

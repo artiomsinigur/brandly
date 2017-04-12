@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*remove margin for figure*/
+figure {
+    margin: 0;
+}
+
+/*remove white space after img*/
+img {
+    display: block;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #ccc;
+    border: 0;
+}
+
+/*Text global
+-------------------------------*/
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Lato, sans-serif;
+    font-size: 100%;
+    line-height: 1.6;
+    color: #777;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5em; /*40/16*/
+    font-weight: 300;
+    font-style: italic;
+    color: #333;
+}
+
+h3 {
+    font-family: Lato, sans-serif;
+    font-size: 1.875em; /*30/16*/
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dc0000;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em; /*16/16*/
+    font-weight: 400;
+}
+
+/*Decoration red lines for title text
+--------------------------------------*/
+.title-center {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5em; /*40/16*/
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    color: #333;
+}
+
+.title-center:before {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 3px;
+    margin: 5.1282% auto 10px; /*60/1170*/
+    background-color: #dc0000;
+}
+
+.title-center:after {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 3px;
+    margin: 10px auto 5.1282%; /*60/1170*/
+    background-color: #dc0000;
+}
+
+/*Buttons global
+-------------------------------------*/
+.btn {
+    display: inline-block;
+    width: 170px; /*170/1170=14.5299%*/
+    margin-top: 30px; /*30/1170*/;
+    margin-right: 30px; /*30/1170*/;
+    padding-top: 15px; /*15/1170*/
+    padding-bottom: 15px; /*15/1170*/
+
+    font: 700 16px Lato, sans-serif;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+}
+
+.m, .l, .xl, .xxl {
+    width: 68px; /*68/1170=5.8119%*/
+}
+
+.btn:last-child,
+.m:last-child,
+.l:last-child,
+.xl:last-child,
+.xxl:last-child {
+    margin-right: 0;
+}
+
+/*Animation global
+------------------------------------*/
+:before,
+:after,
+.latest-opacity,
+.latest-title,
+.latest-sale-opacity,
+.latest-sale-title {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; /*only IE10+*/
+}
+
+/*Other
+-------------------------------------*/
+.breadcrumb {
+    display: block;
+    margin-top: -10px;
+    font-size: .9em;
+}
+
+/*Carousel slick for dots and prev/next
+-------------------------------------*/
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.slick-dots {
+    text-align: center;
+}
+
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-top: 5.1282%; /*60/1170*/
+    margin-bottom: 5.1282%; /*60/1170*/
+    padding: 5px;
+    cursor: pointer;
+}
+
+.slick-dots button {
+    width: 16px;
+    height: 16px;
+    background-color: #555;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots button:hover {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #dc0000;
+}
+
+.slick-active > button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #dc0000;
+}
